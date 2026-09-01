@@ -38,7 +38,6 @@ public class KipasElektrik extends Kipas{
     //method 3
     @Override
     public void cetakInformasi() {
-        System.out.println("=== KIPAS ELEKTRIK ===");
         System.out.println("Merek               : " + getMerek());
         System.out.println("Kecepatan           : " + getKecepatan());
         System.out.println("Kapasitas Baterai   : " + kapasitasBaterai + " mAh");

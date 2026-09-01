@@ -49,14 +49,9 @@ public class KipasMeja extends Kipas{
     // Method 3
     @Override
     public void cetakInformasi() {
-        System.out.println("=== KIPAS MEJA ===");
-
         System.out.println("Merek                    : " + getMerek());
-
         System.out.println("Kecepatan                : " + getKecepatan());
-
         System.out.println("Diameter Kipas           : " + diameterKipas + " cm");
-
         System.out.println("Jumlah Tingkat Kecepatan : " + jumlahTingkatKecepatan);
     }
 }

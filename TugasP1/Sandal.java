@@ -39,7 +39,6 @@ public class Sandal {
 
     // Method 3
     public void cetakInformasi() {
-        System.out.println("=== SANDAL ===");
         System.out.println("Warna  : " + warna);
         System.out.println("Ukuran : " + ukuran);
     }

@@ -51,7 +51,6 @@ public class BotolMinum {
 
     // Method 3
     public void cetakInformasi() {
-        System.out.println("=== BOTOL MINUM ===");
         System.out.println("Kapasitas   : " + kapasitas + " ml");
         System.out.println("Isi Minuman : " + isiMinuman + " ml");
     }

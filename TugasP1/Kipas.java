@@ -38,7 +38,6 @@ public class Kipas {
     }
     //method 3
     public void cetakInformasi() {
-        System.out.println("=== KIPAS ===");
         System.out.println("Merek       : " + merek);
         System.out.println("Kecepatan   : " + kecepatan);
     }
