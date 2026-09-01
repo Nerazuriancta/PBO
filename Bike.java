@@ -1,12 +1,17 @@
 public class Bike {
 
     private String brand;
+    private String color; //tambahan
     private int speed;
     private int gear=1;
     //Gear 1: max 5 km/h, Gear 2: max 10 km/h, ... Gear 6: max 60 km/h
     private final int[] GEAR_SPEED_LIMITS = {5,10, 25, 30, 40, 60};
+
     public void setBrand(String brandName) {
         brand = brandName;
+    }
+    public void setColor(String bikeColor) {
+        color = bikeColor;
     }
     public void gearChanges(int gearValue) {
         if (gearValue < 1 || gearValue > 6) {
@@ -31,6 +36,7 @@ public class Bike {
     }
     public void printInfo() {
         System.out.println("Brand   : " + brand);
+        System.out.println("Warna   : " + color);
         System.out.println("Speed   : " + speed);
         System.out.println("Gear    : " + gear);
     }
