@@ -5,7 +5,8 @@ public class Demo {
         // Membuat object setiap class
         Kipas kipas = new Kipas("Miyako", 1);
 
-        KipasElektrik kipasElektrik = new KipasElektrik("Miniso",2,2000,0.2);
+        KipasElektrik kipasElektrik = new KipasElektrik("Miniso",2,
+        2000,0.2);
 
         KipasMeja kipasMeja = new KipasMeja("Cosmos",1,30,3);
 
