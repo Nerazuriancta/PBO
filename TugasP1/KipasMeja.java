@@ -43,9 +43,7 @@ public class KipasMeja extends Kipas{
 
     // Method 2
     public void tampilkanTingkatKecepatan() {
-        System.out.println("Kipas meja memiliki "
-                + jumlahTingkatKecepatan
-                + " tingkat kecepatan.");
+        System.out.println("Kipas meja memiliki " + jumlahTingkatKecepatan + " tingkat kecepatan.");
     }
 
     // Method 3
@@ -53,16 +51,12 @@ public class KipasMeja extends Kipas{
     public void cetakInformasi() {
         System.out.println("=== KIPAS MEJA ===");
 
-        System.out.println("Merek                    : "
-                + getMerek());
+        System.out.println("Merek                    : " + getMerek());
 
-        System.out.println("Kecepatan                : "
-                + getKecepatan());
+        System.out.println("Kecepatan                : " + getKecepatan());
 
-        System.out.println("Diameter Kipas           : "
-                + diameterKipas + " cm");
+        System.out.println("Diameter Kipas           : " + diameterKipas + " cm");
 
-        System.out.println("Jumlah Tingkat Kecepatan : "
-                + jumlahTingkatKecepatan);
+        System.out.println("Jumlah Tingkat Kecepatan : " + jumlahTingkatKecepatan);
     }
 }
