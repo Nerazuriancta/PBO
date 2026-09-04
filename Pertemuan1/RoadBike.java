@@ -1,3 +1,5 @@
+package Pertemuan1;
+
 public class RoadBike extends Bike{
     private int tireWidhth;
 

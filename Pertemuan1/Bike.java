@@ -1,5 +1,6 @@
-public class Bike {
+package Pertemuan1;
 
+public class Bike {
     private String brand;
     private String color; //tambahan
     private int speed;

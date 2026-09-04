@@ -1,4 +1,5 @@
-class Product {
+package Pertemuan1;
+    class Product {
     private final String itemName;
     private final float price;
 
@@ -15,7 +16,6 @@ class Product {
         return itemName;
     }
 }
-
 public class OOP {
     public static void main(String[] args) {
         
@@ -34,5 +34,5 @@ public class OOP {
         System.out.println("Produk          : " + product2.getName());
         System.out.println("Jumlah Produk   : " + quantity2);
         System.out.println("Total           : " + product2.total(quantity2));
-    }
+    }   
 }

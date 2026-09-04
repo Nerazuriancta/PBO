@@ -1,4 +1,6 @@
-public class BikeDemo {
+package Pertemuan1;
+
+public class BikeDemo extends Bike{
     public static void main(String[] args) {
         Bike mountainBike1 = new Bike();
         Bike mountainBike2 = new Bike();

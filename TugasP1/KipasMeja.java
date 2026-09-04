@@ -5,15 +5,10 @@ public class KipasMeja extends Kipas{
     private int jumlahTingkatKecepatan;
 
     // Constructor
-    public KipasMeja(String merek, int kecepatan,
-                     double diameterKipas,
-                     int jumlahTingkatKecepatan) {
-
+    public KipasMeja(String merek, int kecepatan, double diameterKipas, int jumlahTingkatKecepatan) {
         super(merek, kecepatan);
-
         this.diameterKipas = diameterKipas;
-        this.jumlahTingkatKecepatan =
-                jumlahTingkatKecepatan;
+        this.jumlahTingkatKecepatan = jumlahTingkatKecepatan;
     }
 
     // Getter dan Setter
