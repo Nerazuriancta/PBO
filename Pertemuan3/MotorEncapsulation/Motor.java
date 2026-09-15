@@ -15,17 +15,33 @@ public class Motor {
 
     public void tambahKecepatan() {
         if (kontakOn == true) {
-            kecepatan += 5;
+            if (kecepatan < 120) {
+                kecepatan += 5;
+
+                if (kecepatan > 120) {
+                    kecepatan = 120;
+                }
+            } else {
+                System.out.println("Kecepatan sudah mencapai maksimal 120 km/h!\n");
+            }
         } else {
-            System.out.println("Kecepatan tidak bisa bertambah karena Mesin Off! \n");
+            System.out.println("Kecepatan tidak bisa bertambah karena Mesin Off!\n");
         }
     }
 
     public void kurangiKecepatan() {
         if (kontakOn == true) {
-            kecepatan -= 5;
+            if (kecepatan > 0) {
+                kecepatan -= 5;
+
+                if (kecepatan < 0) {
+                    kecepatan = 0;
+                }
+            } else {
+                System.out.println("Kecepatan sudah mencapai minimal 0 km/h!\n");
+            }
         } else {
-            System.out.println("Kecepatan tidak bisa berkurang karena Mesin Off! \n");
+            System.out.println("Kecepatan tidak bisa berkurang karena Mesin Off!\n");
         }
     }
 
@@ -35,6 +51,6 @@ public class Motor {
         } else {
             System.out.println("Kontak Off");
         }
-        System.out.println("Kecepatan "+kecepatan+"\n");
+        System.out.println("Kecepatan "+kecepatan+" km/h\n");
     }
 }
