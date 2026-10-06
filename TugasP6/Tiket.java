@@ -1,0 +1,33 @@
+package TugasP6;
+
+public class Tiket {
+    protected String kodeTiket;
+    protected String namaPenumpang;
+    protected String asal;
+    protected String tujuan;
+    protected int hargaDasar;
+
+    public Tiket() {
+    }
+
+    public Tiket(String kodeTiket, String namaPenumpang, String asal,
+                 String tujuan, int hargaDasar) {
+        this.kodeTiket = kodeTiket;
+        this.namaPenumpang = namaPenumpang;
+        this.asal = asal;
+        this.tujuan = tujuan;
+        this.hargaDasar = hargaDasar;
+    }
+
+    public Tiket(Tiket tiket) {
+        this(tiket.kodeTiket, tiket.namaPenumpang, tiket.asal,
+             tiket.tujuan, tiket.hargaDasar);
+    }
+
+    public void tampilTiket() {
+        System.out.println("Kode Tiket      = " + kodeTiket);
+        System.out.println("Nama Penumpang  = " + namaPenumpang);
+        System.out.println("Rute            = " + asal + " - " + tujuan);
+        System.out.println("Harga Dasar     = " + hargaDasar);
+    }
+}
