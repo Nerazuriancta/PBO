@@ -11,6 +11,9 @@ public class Main {
         Customer customer3 = new Customer("Rian", "0812-0000-0003");
         SavingsAccount savings = new SavingsAccount("A003", customer3, 100000, 0.02);
 
+        Customer customer4 = new Customer("Budi", "0812-0000-0004");
+        BusinessAccount business = new BusinessAccount("A004", customer4, 2000000);
+
         try {
             savings.withdraw(70000);
         } catch (InsufficientBalanceException e) {
@@ -28,7 +31,9 @@ public class Main {
         bank.addAccount(acc1);
         bank.addAccount(acc2);
         bank.addAccount(savings);
+        bank.addAccount(business);
         bank.processMonthEnd();
         bank.printHistory("A003");
+        bank.printAllAccounts();
     }
 }
